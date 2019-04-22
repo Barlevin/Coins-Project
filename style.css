@@ -1,0 +1,598 @@
+body {
+  background: rgba(0, 0, 0, 0.89);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background: url("/images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 980px;
+  background-attachment: fixed;
+}
+
+body .rowNav {
+  opacity: 0.9;
+  margin-top: -70px;
+  text-align: center;
+}
+
+body .rowNav .colBtn {
+  margin-bottom: 10px;
+}
+
+body .rowNav .inputSearch {
+  width: auto;
+  display: inline-block;
+  margin-left: 700px;
+  border: 1px solid #312e2e;
+}
+
+body .modalWindow {
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */
+}
+
+body .modalWindow .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+body .modalWindow .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 305px;
+}
+
+body .modalWindow .modal-content .modalMessage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: bolder;
+  color: blue;
+}
+
+body .modalWindow .modal-content .modalMessage .coinAdd {
+  color: #088513;
+}
+
+body .modalWindow .modal-content .close {
+  margin-top: -15px;
+}
+
+body .modalWindow .close {
+  color: #aaaaaa;
+  margin-left: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .modalWindow .close:hover,
+body .modalWindow .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .modalWindow .coinContent .card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Rounded sliders */
+}
+
+body .modalWindow .coinContent .card .toggleBtn {
+  float: right;
+  margin-top: -41px;
+}
+
+body .modalWindow .coinContent .card .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+body .modalWindow .coinContent .card .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+body .modalWindow .coinContent .card .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .modalWindow .coinContent .card .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .modalWindow .coinContent .card input:checked + .slider {
+  background-color: #2196F3;
+}
+
+body .modalWindow .coinContent .card input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+body .modalWindow .coinContent .card input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+body .modalWindow .coinContent .card .slider.round {
+  border-radius: 34px;
+}
+
+body .modalWindow .coinContent .card .slider.round:before {
+  border-radius: 50%;
+}
+
+body .modalWindow .coinContent .card .card-text {
+  font-size: 13px;
+}
+
+body .contentContainer {
+  opacity: 0.9;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .contentContainer .contentHomePage {
+  min-height: 750px;
+  text-align: center;
+}
+
+body .contentContainer .contentHomePage .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+body .contentContainer .contentHomePage .card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 5px;
+  text-align: left;
+  margin: 20px;
+  -webkit-box-shadow: 4px 4px 4px black;
+          box-shadow: 4px 4px 4px black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #161669;
+  border: 2px solid #161668;
+  border-radius: 30px;
+  opacity: 0.9;
+  /* Rounded sliders */
+}
+
+body .contentContainer .contentHomePage .card .toggleBtn {
+  float: right;
+  margin-top: -41px;
+}
+
+body .contentContainer .contentHomePage .card .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+body .contentContainer .contentHomePage .card .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+body .contentContainer .contentHomePage .card .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .contentContainer .contentHomePage .card .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .contentContainer .contentHomePage .card input:checked + .slider {
+  background-color: #2196F3;
+}
+
+body .contentContainer .contentHomePage .card input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+body .contentContainer .contentHomePage .card input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+body .contentContainer .contentHomePage .card .slider.round {
+  border-radius: 34px;
+}
+
+body .contentContainer .contentHomePage .card .slider.round:before {
+  border-radius: 50%;
+}
+
+body .contentContainer .contentHomePage .card .card-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+body .contentContainer .contentHomePage .card .collapsible {
+  background-color: #123b66;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  width: 98%;
+  border: 1px solid transparent;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+  border-radius: .25rem;
+  border-color: #000000;
+  color: #fff;
+  opacity: 0.9;
+  -webkit-box-shadow: 4px 4px 4px;
+          box-shadow: 4px 4px 4px;
+}
+
+body .contentContainer .contentHomePage .card .active, body .contentContainer .contentHomePage .card .collapsible:hover {
+  background-color: #104074;
+  opacity: 1;
+}
+
+body .contentContainer .contentHomePage .card .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+body .contentContainer .contentHomePage .card .moreInfo {
+  font-size: 12px;
+}
+
+body .contentContainer .contentHomePage .card .moreInfo .moreInfoCollapser {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+body .contentContainer .contentHomePage .card .moreInfo .moreInfoCollapser .price {
+  font-size: 14px;
+}
+
+body .contentContainer .contentLiveReportPage {
+  min-height: 750px;
+}
+
+body .contentContainer .contentLiveReportPage .liveReportMsg {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  max-width: 516px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  -webkit-box-shadow: 6px 6px 6px black;
+          box-shadow: 6px 6px 6px black;
+  opacity: 0.8;
+  margin-top: 20px;
+  text-shadow: 2px 2px red;
+}
+
+body .contentContainer .contentAboutPage {
+  background-color: white;
+  font-weight: bold;
+  min-height: 750px;
+  text-align: center;
+}
+
+body .contentContainer .contentAboutPage .firstdescription {
+  margin-top: 90px;
+}
+
+body .contentContainer .contentAboutPage .aboutMy {
+  margin-top: 130px;
+}
+
+body .contentContainer .contentAboutPage .MyPicture {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 40px;
+}
+
+body .contentContainer .contentSearchPage {
+  min-height: 750px;
+}
+
+body .contentContainer .contentSearchPage .card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 5px;
+  border-radius: 30px;
+  /* Rounded sliders */
+}
+
+body .contentContainer .contentSearchPage .card .card-text {
+  font-size: 13px;
+}
+
+body .contentContainer .contentSearchPage .card .toggleBtn {
+  float: right;
+  margin-top: -41px;
+}
+
+body .contentContainer .contentSearchPage .card .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+body .contentContainer .contentSearchPage .card .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+body .contentContainer .contentSearchPage .card .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .contentContainer .contentSearchPage .card .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .contentContainer .contentSearchPage .card input:checked + .slider {
+  background-color: #2196F3;
+}
+
+body .contentContainer .contentSearchPage .card input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+body .contentContainer .contentSearchPage .card input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+body .contentContainer .contentSearchPage .card .slider.round {
+  border-radius: 34px;
+}
+
+body .contentContainer .contentSearchPage .card .slider.round:before {
+  border-radius: 50%;
+}
+
+body .contentContainer .contentSearchPage .card .collapsible {
+  background-color: #007bff;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  width: 95px;
+  border: 1px solid transparent;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+  border-radius: .25rem;
+  border-color: #007bff;
+  color: #fff;
+}
+
+body .contentContainer .contentSearchPage .card .active, body .contentContainer .contentSearchPage .card .collapsible:hover {
+  background-color: #007bff;
+}
+
+body .contentContainer .contentSearchPage .card .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+body .contentContainer .contentSearchPage .card .morInfo {
+  font-size: 12px;
+}
+
+body .contentContainer .contentSearchPage .card .morInfo .morInfoCollapser {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+body .contentContainer .contentSearchPage .card .morInfo .morInfoCollapser .price {
+  font-size: 14px;
+}
+
+body .myButton {
+  -webkit-box-shadow: 3px 4px 7px 0px #1724b3;
+  box-shadow: 3px 4px 7px 0px #1724b3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #4169fa), to(#00095e));
+  background: linear-gradient(to bottom, #4169fa 5%, #00095e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4169fa', endColorstr='#00095e',GradientType=0);
+  background-color: #4169fa;
+  border-radius: 13px;
+  border: 1px solid #1e2b82;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 17px;
+  padding: 9px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+body .myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #00095e), to(#4169fa));
+  background: linear-gradient(to bottom, #00095e 5%, #4169fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00095e', endColorstr='#4169fa',GradientType=0);
+  background-color: #00095e;
+}
+
+body .myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+body .myButton2 {
+  -webkit-box-shadow: 3px 4px 7px 0px #8a2a21;
+  box-shadow: 3px 4px 7px 0px #8a2a21;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #e63727), to(#52120d));
+  background: linear-gradient(to bottom, #e63727 5%, #52120d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e63727', endColorstr='#52120d',GradientType=0);
+  background-color: #e63727;
+  border-radius: 13px;
+  border: 1px solid #8f1f17;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 17px;
+  padding: 9px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+
+body .myButton2:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #52120d), to(#e63727));
+  background: linear-gradient(to bottom, #52120d 5%, #e63727 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#52120d', endColorstr='#e63727',GradientType=0);
+  background-color: #52120d;
+}
+
+body .myButton2:active {
+  position: relative;
+  top: 1px;
+}
+
+body .myButton3 {
+  -webkit-box-shadow: 4px 3px 7px 0px #226b00;
+  box-shadow: 4px 3px 7px 0px #226b00;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #40c928), to(#0d1f09));
+  background: linear-gradient(to bottom, #40c928 5%, #0d1f09 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40c928', endColorstr='#0d1f09',GradientType=0);
+  background-color: #40c928;
+  border-radius: 13px;
+  border: 1px solid #244514;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 17px;
+  padding: 10px 26px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b8a3c;
+}
+
+body .myButton3:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #0d1f09), to(#40c928));
+  background: linear-gradient(to bottom, #0d1f09 5%, #40c928 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d1f09', endColorstr='#40c928',GradientType=0);
+  background-color: #0d1f09;
+}
+
+body .myButton3:active {
+  position: relative;
+  top: 1px;
+}
+
+body .btn-dark {
+  height: 37px;
+  width: 70px;
+  margin-top: -4px;
+}
+
+body .spinner-grow {
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
